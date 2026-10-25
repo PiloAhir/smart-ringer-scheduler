@@ -10,8 +10,17 @@ android {
     defaultConfig {
         applicationId = "com.example.smartringer"
         minSdk = 26
-        targetSdk = 35
+        targetSdk = 28
         versionCode = 1
         versionName = "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
